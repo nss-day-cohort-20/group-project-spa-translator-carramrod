@@ -1,5 +1,5 @@
 function useTranslate(){
-	let userGivenLanguage = document.getElementById("languageSelector").value;
+	let userGivenLanguage = document.getElementById("Language-selected").value;
 	let userGivenMessage = document.getElementById("userMessage").value;
 	let translatedMessage = "";
 
@@ -26,7 +26,7 @@ function useTranslate(){
 	}
 
 	// get the location of the output text
-	let whereToAppend = document.getElementById("finishedText");
+	let whereToAppend = document.getElementById("translation");
 
 	// clear the previous values
 	whereToAppend.innerHTML = "";
@@ -39,4 +39,4 @@ function useTranslate(){
 }
 
 
-document.getElementById("translateButton").addEventListener("click", useTranslate());
+document.getElementById("button").addEventListener("click", useTranslate());
