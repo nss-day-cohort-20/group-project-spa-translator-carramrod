@@ -1,7 +1,6 @@
-var translator = (function(){
+var translator = (function(oldTrans){
 
 	let russianLexicon = new Map();
-	console.log("russianLexicon", );
 	russianLexicon.set("merry", "веселый");
 	russianLexicon.set("christmas","рождество");
 	russianLexicon.set("and", "и");
@@ -9,6 +8,17 @@ var translator = (function(){
 	russianLexicon.set("new", "новый");
 	russianLexicon.set("year", "год");
 
-	console.log("russianLexicon", russianLexicon);
-	console.log("0th element", russianLexicon.get("merry"));
-}())
+	oldTrans.translateRussian = function(usertext) {
+
+		let textArray = usertext.split(" ");
+		let translatedArray = [];
+		for (i = 0; i < textArray.length; i++){
+			translatedArray.push(russianLexicon.get(textArray[i]));
+		}
+		console.log(translatedArray);
+		return translatedArray.join(" ");
+
+	};
+return oldTrans;
+
+}(translator))
