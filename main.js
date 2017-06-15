@@ -12,11 +12,11 @@ function useTranslate(){
 		translatedMessage = translator.translateJapanese(userGivenMessage);
 	}
 
-	if (userGivenLanguage === "Japanese"){
+	if (userGivenLanguage === "Hebrew"){
 		translatedMessage = translator.translateHebrew(userGivenMessage);
 		}
 
-	if (userGivenLanguage === "Japanese"){
+	if (userGivenLanguage === "German"){
 		translatedMessage = translator.translateGerman(userGivenMessage);
 		}
 
