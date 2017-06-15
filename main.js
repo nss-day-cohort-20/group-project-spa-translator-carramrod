@@ -4,24 +4,24 @@ function useTranslate(){
 	let userGivenMessage = document.getElementById("User-message").value;
 	let translatedMessage = "";
 
-	// if (userGivenLanguage === "Russian"){
-			// translatedMessage = translator.translateRussian(userGivenMessage);
-	// 	}
+	if (userGivenLanguage === "Russian"){
+			translatedMessage = translator.translateRussian(userGivenMessage);
+		}
 
 	if (userGivenLanguage === "Japanese"){
-
 		translatedMessage = translator.translateJapanese(userGivenMessage);
 	}
 
-		// case "Hebrew":
-		// 	translatedMessage = translator.translateHebrew(userGivenMessage);
-		// 	break
+	if (userGivenLanguage === "Japanese"){
+		translatedMessage = translator.translateHebrew(userGivenMessage);
+		}
 
-		// case "German":
-		// 	translatedMessage = translator.translateGerman(userGivenMessage);
-		// 	break
+	if (userGivenLanguage === "Japanese"){
+		translatedMessage = translator.translateGerman(userGivenMessage);
+		}
+
 	// console.log(translator.translateJapanese);
-	console.log(userGivenMessage);
+	// console.log(userGivenMessage);
 	// console.log(userGivenLanguage);
 	// console.log(translatedMessage);
 
