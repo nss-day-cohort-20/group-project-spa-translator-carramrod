@@ -1,7 +1,7 @@
 var translator = (function(oldTrans) {
-    console.log("oldTrans", oldTrans)
+    //console.log("oldTrans", oldTrans)
     let hebrewLexicon = new Map();
-    console.log("hebrewLexicon", );
+    //console.log("hebrewLexicon", );
     hebrewLexicon.set("merry", "עליז");
     hebrewLexicon.set("christmas", "חַג הַמוֹלָד");
     hebrewLexicon.set("and", "ו");
@@ -11,9 +11,9 @@ var translator = (function(oldTrans) {
 
 
 
-    console.log("hebrewLexicon", hebrewLexicon);
+   // console.log("hebrewLexicon", hebrewLexicon);
 
-    var usertext = ("merry christmas and happy new year")
+    //var usertext = ("merry christmas and happy new year")
 
     oldTrans.translateHebrew = function(usertext) {
         let textarray = usertext.split(" ");
@@ -21,7 +21,7 @@ var translator = (function(oldTrans) {
         let translatedarray = [];
         for (var i = 0; i < textarray.length; i++) {
 
-            translatedarray.push(hebrewLexicon.get[i]);
+            translatedarray.push(hebrewLexicon.get(textarray[i]));
 
         }
         return translatedarray.join(" ");
