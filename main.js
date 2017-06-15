@@ -1,29 +1,29 @@
 function useTranslate(){
+	console.log("function runs");
 	let userGivenLanguage = document.getElementById("Language-selected").value;
-	let userGivenMessage = document.getElementById("userMessage").value;
+	let userGivenMessage = document.getElementById("User-message").value;
 	let translatedMessage = "";
 
-	switch (userGivenLanguage){
+	// if (userGivenLanguage === "Russian"){
+			// translatedMessage = translator.translateRussian(userGivenMessage);
+	// 	}
 
-		case "Russian":
-			translatedMessage = translator.translateRussian(userGivenMessage);
-			break
+	if (userGivenLanguage === "Japanese"){
 
-		case "Japanese":
-			translatedMessage = translator.translateJapanese(userGivenMessage);
-			break
-
-		case "Hebrew":
-			translatedMessage = translator.translateHebrew(userGivenMessage);
-			break
-
-		case "German":
-			translatedMessage = translator.translateGerman(userGivenMessage);
-			break
-
-		default:
-			alert("Selector broke. Please Choose a language");
+		translatedMessage = translator.translateJapanese(userGivenMessage);
 	}
+
+		// case "Hebrew":
+		// 	translatedMessage = translator.translateHebrew(userGivenMessage);
+		// 	break
+
+		// case "German":
+		// 	translatedMessage = translator.translateGerman(userGivenMessage);
+		// 	break
+	// console.log(translator.translateJapanese);
+	console.log(userGivenMessage);
+	// console.log(userGivenLanguage);
+	// console.log(translatedMessage);
 
 	// get the location of the output text
 	let whereToAppend = document.getElementById("translation");
@@ -39,4 +39,4 @@ function useTranslate(){
 }
 
 
-document.getElementById("button").addEventListener("click", useTranslate());
+document.getElementById("button").addEventListener("click", useTranslate);
