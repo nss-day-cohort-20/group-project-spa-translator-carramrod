@@ -19,7 +19,7 @@ var translator = function(oldTrans) {
 
         let translatedArray = [];
         for (i = 0; i < textArray.length; i++) {
-            translatedArray.push(germanLexicon.get[i]);
+            translatedArray.push(germanLexicon.get(textArray[i]);
         }
         return translatedArray.join("");
 
