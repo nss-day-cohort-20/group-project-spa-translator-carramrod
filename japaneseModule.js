@@ -2,10 +2,12 @@ var translator = (function(oldTrans){
 	// console.log("oldTrans", oldTrans);
 	let japaneseLexicon = new Map();
 	// console.log("japaneseLexicon", );
-	japaneseLexicon.set("merry", "メッリー");
-	japaneseLexicon.set("christmas","クリストマス");
+	japaneseLexicon.set("merry", "メリー");
+	japaneseLexicon.set("christmas","クリスマス");
 	japaneseLexicon.set("and", "と");
-	japaneseLexicon.set("happy new year", "明けましておめでとう");
+	japaneseLexicon.set("happy", "明けまして");
+	japaneseLexicon.set("new", "おめでとう");
+	japaneseLexicon.set("year", "ございます");
 
 	// console.log("japaneseLexicon", japaneseLexicon);
 	// console.log("0th element", japaneseLexicon.get("merry"));
